@@ -47,5 +47,3 @@ int main() {
     f1.ShowMyFriendDetailInfo();
     return 0;
 }
-
-// p.297
