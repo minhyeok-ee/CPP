@@ -12,7 +12,7 @@ class Second: public First{
 };
 
 class Third: public Second{
-    public:
+    public: 
         virtual void myFunc() { cout << "Third" << endl; };
 };
 
