@@ -3,24 +3,23 @@ using namespace std;
 
 class BaseOne{
     public:
-        void SimpleFuncOne() { cout << "BaseOne" << endl; }
-
+        void SimpleFunc() { cout << "baseone" << endl; }
 };
 
 class BaseTwo{
     public:
-        void SimpleFuncTwo() { cout << "BaseTwo" << endl; }
+        void SimpleFunc() { cout << "basetwo" << endl; }
 };
 
 class MultiDerived: public BaseOne, protected BaseTwo{
     public:
         void ComplexFunc(){
-            SimpleFuncOne();
-            SimpleFuncTwo();
+            BaseOne::SimpleFunc();
+            BaseTwo::SimpleFunc();
         }
 };
 
-int main () {
+int main() {
     MultiDerived mdr;
     mdr.ComplexFunc();
     return 0;
